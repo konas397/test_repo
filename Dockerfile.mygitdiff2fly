@@ -1,4 +1,5 @@
 FROM konas397/gitdiff2fly:1.2
 COPY run.sh /opt/app/
 RUN chmod +x /opt/app/run.sh
+COPY ./ /work
 ENTRYPOINT [ "/bin/sh" ]
